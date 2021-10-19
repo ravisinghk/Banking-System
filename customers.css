@@ -1,0 +1,337 @@
+:root {
+    --p60: #DCEAF1;
+    --p30: #2F1B50;
+    --p10: #3885A0;
+  }
+
+body{
+    background: var(--p60);
+    margin: 0;
+}
+
+.navbar{
+    background-color: var(--p10);
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px;
+    height: 3rem;
+    align-items: center;
+}
+
+.nav-item{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.navHome{
+    margin-right: 2rem;
+    margin-left: 1rem;
+}
+
+.navCust{
+    margin-right: 2rem;
+    background-color: var(--p30);
+    color: white;
+    padding: 0.5%;
+}
+
+.tableBigDiv{
+    background-color: white;
+    width: 70%;
+    height: 80%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: translateY(3%);
+    /* background-color: yellow; */
+
+}
+
+.tableSmallDiv{
+    padding: 4%;
+    /* background-color:blue; */
+}
+
+.table{
+    font-family: 'Nobile', sans-serif;
+    width: 90%;
+}
+
+#balance{
+    transform: translateX(3%);
+}
+
+.fitem{
+
+    transform: translateX(5%);
+}
+
+/* .newClass:hover{
+    text-decoration: underline;
+    color: var(--p30);
+    transform: scale(2%);
+} */
+
+
+@media only screen and (max-width: 880px) {
+
+    body { 
+       font-size: 80%; 
+    }
+ 
+    .table{
+        width: 85%;
+    }
+ }
+
+ @media only screen and (max-width: 770px) {
+
+    body { 
+       font-size: 76%; 
+    }
+
+    .table{
+        width: 75%;
+    }
+ }
+
+ @media only screen and (max-width: 760px) {
+
+    body { 
+       font-size: 72%; 
+    }
+
+    .table{
+        width: 70%;
+    }
+ }
+
+ @media only screen and (max-width: 752px) {
+
+    body { 
+       font-size: 68%; 
+    }
+
+    .table{
+        width: 60%;
+    }
+ }
+
+
+ @media only screen and (max-width: 725px) {
+
+    body { 
+       font-size: 64%; 
+    }
+
+    .table{
+        width: 66%;
+    }
+
+ }
+
+ 
+ @media only screen and (max-width: 700px) {
+
+    body { 
+       font-size: 60%; 
+    }
+ 
+    .table{
+        width: 57%;
+    }
+ }
+
+
+ @media only screen and (max-width: 675px) {
+
+    body { 
+       font-size: 56%; 
+    }
+ 
+    .table{
+        width: 50%;
+    }
+ }
+
+
+ @media only screen and (max-width: 650px) {
+
+    body { 
+       font-size: 52%; 
+    }
+ 
+    .table{
+        width: 40%;
+    }
+ }
+
+
+
+
+ @media only screen and (max-width: 560px) {
+
+    body { 
+       font-size: 48%; 
+    }
+
+    .table{
+        width: 65%;
+        /* padding: 6px 8px; */
+    }
+ 
+ }
+
+
+ @media only screen and (max-width: 535px) {
+
+    body { 
+       font-size: 44%; 
+    }
+ 
+    .table{
+        width: 60%;
+    }
+
+    .tableBigDiv{
+        width: 75%;
+    }
+ }
+
+
+ 
+ @media only screen and (max-width: 476px) {
+
+    body { 
+       font-size: 42%; 
+    }
+
+    .table{
+        width: 55%;
+    }
+
+    .tableBigDiv{
+        width: 80%;
+    }
+
+    th, td {
+        padding: 7px 7px !important;
+    }
+ 
+ 
+ }
+
+ @media only screen and (max-width: 420px) {
+
+    body { 
+       font-size: 40%; 
+    }
+
+    .table{
+        width: 50%;
+    }
+
+    .tableBigDiv{
+        width: 85%;
+    }
+
+    th, td {
+        padding: 7px 7px !important;
+    }
+ 
+ 
+ }
+
+
+ @media only screen and (max-width: 385px) {
+
+    body { 
+       font-size: 38%; 
+    }
+
+    .table{
+        width: 50%;
+    }
+
+    .tableBigDiv{
+        width: 90%;
+    }
+ 
+    th, td {
+        padding: 7px 7px !important;
+    }
+ 
+ }
+
+
+ 
+ @media only screen and (max-width: 365px) {
+
+    body { 
+       font-size: 38%; 
+    }
+
+    .table{
+        width: 45%;
+    }
+
+    .tableBigDiv{
+        width: 95%;
+    }
+
+    th, td {
+        padding: 7px 7px !important;
+    }
+ 
+ 
+ }
+
+
+ @media only screen and (max-width: 347px) {
+
+    body { 
+       font-size: 38%; 
+    }
+
+    .table{
+        width: 40%;
+    }
+
+    .tableBigDiv{
+        width: 97%;
+    }
+
+    th, td {
+        padding: 7px 7px !important;
+    }
+ 
+ }
+
+
+ 
+ @media only screen and (max-width: 336px) {
+
+    body { 
+       font-size: 38%; 
+    }
+
+    .table{
+        width: 25%;
+    }
+
+    .tableBigDiv{
+        width: 97%;
+    }
+
+    th, td {
+        padding: 7px 7px !important;
+    }
+ 
+ 
+ }
+
+
+
+
+

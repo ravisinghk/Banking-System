@@ -1,0 +1,49 @@
+:root {
+    --p60: #DCEAF1;
+    --p30: #2F1B50;
+    --p10: #3885A0;
+  }
+
+.biggerBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    border: 5px solid var(--p30);
+    height: 60%;
+    width: 50%;
+    font-family: 'Exo 2', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient( #E8FFD6, #FFFFFF);
+
+
+   
+}
+
+
+.biggerText{
+    font-size: 220%;
+    font-weight: bold;
+    color: var(--p30);
+}
+
+.smallerText{
+    font-size: 170%;
+    color: var(--p30);
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+#sec{
+    font-weight: bold;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+
+
+

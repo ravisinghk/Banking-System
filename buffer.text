@@ -1,0 +1,34 @@
+// var ajax = new XMLHttpRequest();
+// ajax.open("GET", "data.php", true);
+// ajax.send();
+
+
+
+// ajax.onreadystatechange = function () {
+//     if (this.readyState == 4 && this.status == 200) {
+//         var data = JSON.parse(this.responseText);
+//         let custObj = data;
+//         console.log(custObj);
+
+//         htmlRow = ` `;
+
+//         // setting trs for rows
+//         for (let key of Object.keys(custObj)) {
+
+//             // let tbody = document.getElementById("tbody");
+
+//             htmlRow += `<tr id="tr${key}">
+//                             <td class="fitem" id ="sno">${parseInt(key)+1}</td>
+//                             <td class="fitem" id ="name">${custObj[key]['name']}</td> 
+//                             <td class="fitem" id ="email">${custObj[key]['email']}</td> 
+//                             <td class="fitem" id ="balance">${custObj[key]['balance']}</td>       
+//                     </tr>`   // ids for trs set
+//         }
+//         document.getElementById("tbody").innerHTML = htmlRow;
+
+
+
+//     }
+
+// }
+

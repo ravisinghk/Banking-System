@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="custView.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Customer View</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-item navHome">Home</a>
+        <a href="" class="nav-item navContact">Contact Us</a>
+        <a href="transaction.php" class="nav-item navTransaction">Transactions</a>
+    </nav>
+
+    <div class="div">
+
+        <div class="card item">
+
+            <div class="card-item1 citem">
+                <div class="inner-item" id="name"></div>
+                <div class="inner-item" id="email"></div>
+                <div class="inner-item" id="balance"></div>
+            </div>
+
+            <div class="card-item2 citem">
+
+                <div class="transfer-head">Transfer Fund</div>
+
+                
+
+               
+
+                    <form class="ask-details-box"  action="transaction-to-db.php" onSubmit="return validateForm()" method="POST">
+                    
+                        <div class="selCust details-div">
+                            <label >Select Beneficiary </label>
+                            <select id="sel-ben" name="ben" placeholder="Select Customer" required>
+                                <option value="" selected hidden disabled>Choose here</option>
+                            </select>
+                        </div>
+    
+                        <div class="amount details-div">
+                           <label>Enter Amount in Rs.</label> <input id="amount" type="number" name="amount" required>
+                        </div>
+                       
+                        <div class="transfer-btn-div">
+                            <!-- <a href="index.html"><button class="submit trbtn"  onclick="transfer()">Transfer</button></a> -->
+                            <button type="submit" class="submit trbtn" onclick="transfer()">Transfer</button>
+                        </div>  
+                        
+                    </form>
+
+                
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+function preventBack() { window.history.forward(); }  
+    setTimeout("preventBack()", 0);  
+    window.onunload = function () { null };  
+
+if ( window.history.replaceState ) {
+  window.history.replaceState( null, null, window.location.href );
+}
+</script>
+
+
+    <script src="View.js"></script>
+</body>
+
+</html>
