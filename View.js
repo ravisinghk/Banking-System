@@ -132,7 +132,7 @@ function validateForm(){
     return false;
   }
   
-  if (document.getElementById("amount").value <= 0  || parseInt(document.getElementById("amount").value)  > parseInt(senderBal) ) {
+  if (document.getElementById("amount").value <= 0  || parseInt(document.getElementById("amount").value)  > parseInt(localStorage.getItem("senderBalance")) ) {
       alert("Enter a Valid Amount ");
       document.getElementById("amount").focus();
       return false;
